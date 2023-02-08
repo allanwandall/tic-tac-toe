@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sign-container">
+            <h2>Let's play a game of</h2>
+            <h1 class="title">TIC TAC TOE</h1>
+            <h2>Pick your sign</h2>
+            <div class="sign-button-container">
+                <button class="button-82-pushable" id="x-button" role="button">
+                    <span class="button-82-shadow"></span>
+                    <span class="button-82-edge"></span>
+                    <span class="button-82-front text">
+                        X
+                    </span>
+                </button>
+                <button class="button-82-pushable" id="o-button" role="button">
+                    <span class="button-82-shadow"></span>
+                    <span class="button-82-edge"></span>
+                    <span class="button-82-front text">
+                        O
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <div class="game-container">
+            <div class="turn-container">
+                <div class="turn active-turn" id="player-1">Player One: 0</div>
+                <div class="turn" id="player-2">Computer: 0</div>
+            </div>
+            <div class="game-grid">
+                <div class="grid-square">X</div>
+                <div class="grid-square"></div>
+                <div class="grid-square"></div>
+                <div class="grid-square"></div>
+                <div class="grid-square"></div>
+                <div class="grid-square"></div>
+                <div class="grid-square"></div>
+                <div class="grid-square"></div>
+                <div class="grid-square"></div>
+            </div>
+            <h1 class="round">Round 1</h1>
+        </div>
+
+        <button class="button-82-pushable return-button" id="return-button" role="button">
+            <span class="button-82-shadow"></span>
+            <span class="button-82-edge"></span>
+            <span class="button-82-front text">
+                Return
+            </span>
+        </button>
+
+        <div class="footer">
+            <div class="link-container">
+                <a href="https://github.com/allanwandall/tic-tac-toe">2023 allanwandall</a>
+                <img src="img/cogleaf.png">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
