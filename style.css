@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
 
 :root {
     --high-contrast: #C8553D;
@@ -131,12 +132,12 @@ button.show {
     flex: 1.5;
 }
 
-#player-1.active-turn {
-    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+#player-turn.active-turn {
+    box-shadow: rgba(255, 0, 85, 0.4) -5px 5px, rgba(255, 0, 85, 0.3) -10px 10px, rgba(255, 0, 85, 0.2) -15px 15px, rgba(255, 0, 85, 0.1) -20px 20px, rgba(255, 0, 85, 0.05) -25px 25px;
 }
 
-#player-2.active-turn {
-    box-shadow: hsl(345deg 100% 47%) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+#computer-turn.active-turn {
+    box-shadow: rgba(255, 0, 85, 0.3) 5px 5px, rgba(255, 0, 85, 0.3) 10px 10px, rgba(255, 0, 85, 0.2) 15px 15px, rgba(255, 0, 85, 0.1) 20px 20px, rgba(255, 0, 85, 0.05) 25px 25px;
 }
 
 .game-grid {
@@ -159,6 +160,13 @@ button.show {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    font-family: 'Bungee Inline', sans-serif;
+}
+
+.grid-square.disabled {
+    pointer-events: none;
+    cursor: initial;
 }
 
 .grid-square:hover {
@@ -173,8 +181,8 @@ button.show {
 
 .return-button {
     width: 150px;
-    left: 6%;
-    top: 4%;
+    left: 85px;
+    top: 40px;
     transform: translate(-50%,-20vh);
 }
 
@@ -190,7 +198,7 @@ button.show {
 }
 
 .footer img {
-    width: 25px;
+    width: 20px;
 }
 
 .footer a {
@@ -207,6 +215,7 @@ button.show {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 8px;
 }
 
 .link-container:hover {
